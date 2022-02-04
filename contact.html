@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr" id="Debut">
+    <head>
+		<link rel="icon" type="image/png" href="images/LogoCube.png">
+		<link rel="stylesheet" type="text/css" href="css/Styles.css">
+        <meta charset="utf-8">
+        <title>Contact Edisson</title>
+	</head>
+    <body>
+        <header class="charte">
+            <h2>Contact</h2>
+            <div class="burger">
+                <img src="images/burger.png" alt="burger" width="50">
+                <div id="menu2">
+                    <div><a href="accueil.html">Accueil</a></div>
+                    <div><a href="Transactions.html">Transactions</a></div>
+                    <div><a href="Equipe.html">L'équipe</a></div>
+                    <div><a href="contact.html">Contact</a></div>
+                    <div><a href="edissoncoin.html">EdissonCoin</a></div>
+                    <div><a href="Offreemploi.html">Offre d'emplois</a></div>
+                    <div><a href="FAQ.html">FAQ</a></div>
+                </div>
+            </div>
+            <nav>
+            <div>
+            <!-- [ Mettre l'ID selectpage a coté de la page correspondante ] -->
+                <a href="accueil.html">Accueil</a>
+                <a href="Transactions.html">Transactions</a>
+                <a href="Equipe.html">L'équipe</a>
+                <a id="SelecPage" href="contact.html">Contact</a>
+                <a href="edissoncoin.html">EdissonCoin</a>
+                <a href="Offreemploi.html">Offres d'emplois</a>
+                <a href="FAQ.html">FAQ</a>
+            </div>
+            </nav>
+            <div>
+            <img class="Logo" src="images/Logo.png" alt="Logo Edisson">
+            </div>
+        </header>
+        <main id="contact">
+			<br>
+			<form action="mysecondyearofBUT.php" method="post">
+				<div>
+					<label for="nom">Nom<span class="etoile">*</span> :</label>
+				</div>
+				<div>
+					<input id="nom" name="nom" type="text" required>
+				</div>
+				<br>
+				<div>
+					<label for="prenom">Prénom<span class="etoile">*</span> :</label>
+				</div>
+				<div>
+					<input id="prenom" name="prenom" type="text" required>
+				</div>
+				<br>
+				<div>
+					<label>Sexe :</label>
+				</div>
+				<div>
+					<input id="homme" name="sexe" type="radio">
+					<label for="homme">Homme</label>
+					<input id="femme" name="sexe" type="radio">
+					<label for="femme">Femme</label>
+					<input id="autre" name="sexe" type="radio">
+					<label for="autre">Autre</label>
+				</div>
+				<br>
+				<div>
+					<label for="moyen">Par quel moyen voulez vous etre contacté<span class="etoile">*</span> :</label>
+				</div>
+				<div>
+					<select id="moyen" name="moyen" required>
+						<option value="">--choisir une option--</option>
+						<option value="email">Email</option>
+						<option value="telephone">Téléphone</option>
+					</select>
+				</div>
+				<br>
+				<div>
+					<label for="email">Email<span class="etoile">*</span> :</label>
+				</div>
+				<div>
+					<input id="email" name="email" type="email" required>
+				</div>
+				<br>
+				<div>
+					<label for="numero">Numéro de téléphone :</label>
+				</div>
+				<div>
+					<input id="numero" name="numero" type="tel">
+				</div>
+				<br>
+				<div>
+					<label for="motif">Quel est votre motif<span class="etoile">*</span> ?</label>
+				</div>
+				<div>
+					<select id="motif" name="motif" required>
+						<option value="">--choisir une option--</option>
+						<option value="question">Question</option>
+						<option value="plainte">Plainte</option>
+						<option value="probleme_technique">Problème technique</option>
+						<option value="suggestion">Suggestion</option>
+						<option value="autre">Autre</option>
+					</select>
+				</div>
+				<br>
+				<div>
+					<label for="vehicule">Quel est votre véhicule<span class="etoile">*</span> ?</label>
+				</div>
+				<div>
+					<select id="vehicule" name="vehicule" required>
+						<option value="">--choisir une option--</option>
+						<option value="velo">Vélo</option>
+						<option value="roller">Roller</option>
+						<option value="trottinette">Trottinette</option>
+						<option value="luge">Luge</option>
+						<option value="skateboard">Skateboard</option>
+					</select>
+				</div>
+				<br>
+				<div>
+					<label for="gamme">Quelle est la gamme de votre produit<span class="etoile">*</span> ?</label>
+				</div>
+				<div>
+					<select id="gamme" name="gamme" required>
+						<option value="">--choisir une option--</option>
+						<option value="S">S</option>
+						<option value="Y">Y</option>
+						<option value="Z">Z</option>
+					</select>
+				</div>
+				<div>
+					
+					<p>Si vous ne savez quel est la gamme de votre véhicule, consulter notre page <a href="transaction.html">transaction</a></p>
+				</div>
+				<br>
+				<div>
+					<label for="probleme">Quel est votre problème<span class="etoile">*</span> ?</label>
+				</div>
+				<div>
+					<textarea id="probleme" name="probleme" required>
+					</textarea>
+				</div>
+				<br>
+				<div>
+					<input id="condition" name="condition" type="checkbox" required>
+					<label for="condition">J'accepte que je soit recontacté et que mes données personels soient revendu<span class="etoile">*</span></label>
+				</div>
+				<br>
+				<div>
+					<input type="submit" value="Envoyer">
+				</div>
+			</form>
+        </main>
+        <footer class="charte">
+			<div>
+				<div>
+				<img class="Logo" src="images/Logo.png" alt="Logo Edisson">
+				</div>
+				<a class="Slogan">Si l'erreur est humaine, nous sommes à 200% humains!</a>
+			</div>
+			<aside>
+			<div>
+				<a>Suivez nous :</a>
+				<a href="https://www.facebook.com/profile.php?id=100073725791737"><img src="images/LogoFacebook.png" alt="Image"></a>
+				<a href="https://twitter.com/JPEdisson"><img src="images/LogoTwitter.png" alt="Image"></a>
+				<a href="https://www.youtube.com/channel/UCmWcSREyc50DF0dzMeO9G0A"><img src="images/LogoYoutube.png" alt="Image"></a>
+				<a href="https://www.instagram.com/jeanpierreedisson/"><img src="images/LogoInsta.png" alt="Image"></a>
+			</div>
+				<a>Copyright © 2021 Edisson and EdissonCoin</a>
+				<a>46 rue de la boustifaille, 58000 Nevers.</a>
+										<a>04 00 00 00 01</a>
+			</aside>
+        </footer>
+    </body>
+</html>
